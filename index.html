@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#030712">
+<title>NEXUS — Timothy Praise</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wallpaper">
+  <div class="topline"><span><i class="dot"></i> NEXUS SYSTEM ONLINE</span><span id="clock">00:00:00</span></div>
+  <header class="identity"><div class="eyebrow">PERSONAL WORKSTATION / 001</div><h1>TIMOTHY <span>PRAISE</span></h1><p>DEVELOPER <b>.</b> MUSICIAN</p></header>
+  <div class="hud hud-left">
+    <div class="panel-title"><span>01 / SYSTEM TELEMETRY</span><span class="live">DEMO</span></div>
+    <div class="meter"><div class="meter-label"><span>CPU LOAD</span><strong id="cpuValue">--%</strong></div><div class="track"><div id="cpuBar" class="fill"></div></div></div>
+    <div class="meter"><div class="meter-label"><span>GPU LOAD</span><strong id="gpuValue">--%</strong></div><div class="track"><div id="gpuBar" class="fill violet"></div></div></div>
+    <div class="meter"><div class="meter-label"><span>MEMORY</span><strong id="ramValue">--%</strong></div><div class="track"><div id="ramBar" class="fill blue"></div></div></div>
+    <p class="note">Browser preview · values are simulated</p>
+  </div>
+  <div class="hud hud-right">
+    <div class="panel-title"><span>02 / TERMINAL STREAM</span><span class="live">LIVE FEED</span></div>
+    <div id="terminal" class="terminal" aria-label="Decorative simulated terminal output"></div>
+    <div class="terminal-foot"><span class="blink">█</span> SIMULATION RUNNING</div>
+  </div>
+  <div class="center-mark"><div class="ring ring-a"></div><div class="ring ring-b"></div><div class="crosshair">+</div><div class="center-caption">FOCUS / CREATE / REPEAT</div></div>
+  <div class="bottom-left"><span class="tiny-label">CURRENT MODE</span><strong>CREATIVE SYSTEMS</strong><span class="muted">Code in logic. Music in soul.</span></div>
+  <button class="music-dock" id="expandMusic" aria-label="Expand music player">
+    <span class="equalizer"><i></i><i></i><i></i><i></i><i></i></span><span class="music-info"><small>NOW PLAYING</small><strong id="trackTitle">Select an audio file</strong><em>Click to open music studio</em></span><span class="expand-icon">⤢</span>
+  </button>
+  <div class="music-overlay" id="musicOverlay" aria-hidden="true">
+    <button class="close-music" id="closeMusic" aria-label="Close music player">×</button>
+    <div class="music-orb"><div class="orb-core">♪</div></div>
+    <div class="studio-kicker">NEXUS AUDIO INTERFACE</div><h2>YOUR SOUNDSPACE</h2><p class="studio-sub">A quiet place for the music.</p>
+    <div class="track-name" id="studioTrack">No track selected</div>
+    <audio id="audio" controls></audio>
+    <label class="file-button" for="audioFile">＋ CHOOSE LOCAL AUDIO</label><input id="audioFile" type="file" accept="audio/*">
+    <p class="studio-hint">Choose an audio file from your computer. Playback stays local.</p>
+  </div>
+  <div class="footer"><span>BUILD 02.0.0 // LOCAL SESSION</span><span>DESIGNED FOR CREATIVITY <b>◆</b></span></div>
+</div>
+<script src="script.js"></script>
+</body></html>
